@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://eee.thymeleaf.org">
+    <head>
+        <title>Test</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <header th:replace="layout/plantilla :: header"/>
+        <h2> Listado de Persona</h2>
+        <a th:href="@{/nuevaPersona}"> Nueva Persona</a>
+        <div th:if="${personas != null and !personas.empty}">
+           <table border="1">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellidos</th>
+                    <th>Correo</th>
+                    <th>Telefono</th>
+                    <th>Eliminar</th>
+                    <th>Modificar</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="persona : ${personas}">
+                    <td th:text="${persona.nombre}"></td>
+                    <td th:text="${persona.apellidos}"></td>
+                    <td th:text="${persona.correo}"></td>
+                    <td th:text="${persona.telefono}"></td>
+                    <td><a th:href="@{/eliminarPersona/} + ${persona.idpersona}">Eliminar</a></td>
+                    <td><a th:href="@{/modificarPersona/} + ${persona.idpersona}">Modificar</a></td>
+                </tr>
+            </tbody>
+           </table>
+        </div>
+        <div th:if="${personas == null or personas.empty}">
+            No tenemos lista de personas que mostrar...
+        </div>  
+        <footer th:replace="layout/plantilla :: footer"/>
+    </body>
+</html>

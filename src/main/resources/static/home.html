@@ -1,45 +1,48 @@
-<!DOCTYPE html>
-<!--
-
--->
+<!DOCTYPE html> <!--  es para decirle al sistema que es de tipo HTML 5 SIEMPRE PONERLO -->
 <html>
     <head>
-        <link rel="stylesheet" href="css/home.css" type="text/css"/>
-
-        <title>PANTALLA HOME</title>
+        <title>Home</title>
+        <!-- Llamado al estilo css -->
+        <link rel="stylesheet" href="css/home.css">
+        
     </head>
     <body>
-        <!--Contiene la pagina-->
+        <!-- class es un atributo que apunta a una hoja de estilo css-->
         <div class="container">
-            <!-- Contiene el navbar-->
+            <!-- <!-- este div va a contener TODA la pagina -->   
             <div class="navbar">
-                <img src="images/logo.png" class="logo">  
-                <!-- Agrupa set de elementos de navegacion -->
-                <nav>
-                    <ul>
-                        <li> <a href="login.html"> Login </a> </li>
-                        <li> <a href="home.html"> Home </a> </li>
-                        <li> <a href=""> About </a> </li>
-                        <li> <a href=""> Profile </a> </li>
-                    </ul>                
-                </nav>
-                <img src="images/cart.png">
-                <!-- Finaliza el navbar -->
-            </div>
-                <!--Inicia el contenido-->
-                <div class="content">
-                    <h1>THIS IS OUR FIST PAGE</h1>
-                    <p> Our main purpose is to provide the <br> BEST experience ever </p>
+               <!-- Se usa un div para encapsular la barra de navegacion --> 
+               <img src="images/logo.png" class="logo">
+               
+               <nav>
+               <!-- Significa Navigation. Agrupa un set de links de navegacion -->     
+               <<ul>
+                   <li><a href =login.html>Login</a></li>
+                   <li><a href =home.html>Home</a></li>
+                   <li><a href ="">About</a></li>
+                   <li><a href ="">Profile</a></li>
+               </ul>
 
-                    <!-- Se encapsulan los iconos -->
-                    <div>
-                        <img src="images/back-arrow.png">
-                        <img src="images/next-arrow.png">
-                    </div>
-                    <img src="images/adidas.jpg">
-
+               </nav>
+               <!-- Agrega un cart al final del nav bar -->  
+               <img src="images/cart.png">
+               <!-- Aqui termina el navbar --> 
             </div>
+                
+                    <div class="content">
+                        <!-- Aqui empieza el contenido de la pagina -->
+                        
+                        <h1>This is our first page</h1>
+                        <p> Our main purpose is to provide the <br> BEST experience!</p>
+                        
+                        <div>
+                          <!--Se encapsulan los iconos -->  
+                          <img src="images/back-arrow.png">
+                          <img src="images/next-arrow.png"> 
+                        </div>
+                        <img src="images/badbunny.png">
+                    </div>         
         </div>
-
     </body>
+  
 </html>

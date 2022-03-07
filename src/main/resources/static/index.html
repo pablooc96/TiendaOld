@@ -1,26 +1,69 @@
-<!DOCTYPE html>
-
+<!DOCTYPE html> <!--  es para decirle al sistema que es de tipo HTML 5 SIEMPRE PONERLO -->
 <html>
     <head>
-        <title>INDEX DE TIENDA</title>
+        <title>TODO supply a title</title>
+        <link rel="stylesheet" href="css/style.css"> <!-- esto es para llamar un diseño en CSS, se pueden importar varios -->
     </head>
+    
     <body>
         <div>
-            <!<!-- Lista desordenada -->
             <ul>
-                <li> Estructura de datos </li>
-                <li> Programacion web </li>
+            <!-- Unordered list genera una lista sin orden -->     
+            <li> Estructura de datos </li>
+            <li> Progra Web </li>
             </ul>
         </div>
-        
+       
         <div>
-            <!<!-- Lista ordenada -->
             <ol>
-                <li> Estructura de datos </li>
-                <li> Programacion web </li>
-            </ol>
+            <!-- Ordered list genera una lista ordenada 1-2-3-4 -->     
+            <li> Estructura de datos </li>
+            <li> Progra Web </li>
+            </ol>           
         </div>
-        <!<!-- Crear hipervinculo hacia otra pagina HTML -->
-        <a href="home.html"> HOME </a>
-    </body>
+          <!-- se usa a para crar un Href que crea un link a otra parte de mi pagina -->     
+        <a href="home.html"> Home </a>
+        
+        <!-- Heading sirve para crear titulos, el tamaño final se da en CSS -->
+        <h1> Todo bien muchachos </h1>
+        <h2> Todo bien muchachos </h2>
+        <h3> Todo bien muchachos </h3>
+        <h4> Todo bien muchachos </h4>
+        <h5> Todo bien muchachos </h5>
+        <h6> Todo bien muchachos </h6>
+        
+        <p> Crea un parrafo </p> 
+        <! -- br es un break de pagina, es un empty tag tambien -->
+        <br> 
+        <div>
+            <! -- empty tags, como el img no requieren etiqueta de cierre -->
+            <img src="images/cart.png">
+            
+            
+        </div>
+        <!-- Rutas relativas hosteadas en la compu -->
+        <!-- Rutas absolutas: hosteadas en internet -->
+        <!-- Sin el MUTED no se autoreproduce el video, se debe agregar para silenciarlo -->
+            <video autoplay muted loop controls>
+                 <!-- Hay que definir el formato del video, por eso se pone el type -->
+                <source src ="videos/fondo.mp4" type="video/mp4" > 
+            </video>  
+            <!-- iframe usa el html de otra pagina y permite usarlo en nuestra pagina
+                 en youtube es necesario darle share y copiar el link que dice ember-->
+            <iframe src="https://www.youtube.com/embed/CqrIZgVvOlM" title="Auron"></iframe>
+            <!-- Se puede copiar toda la info de youtube para darle mas opciones -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/CqrIZgVvOlM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            <!-- Esto es para hacer un estilo sin estar en el css -->
+        <h3 style ='color: red'>Hello World</h3>
+        
+        <!-- Poner imagenes con links en vez de llamar imagenes descargadas -->
+         <ul>
+                    <li><a href=""><img src="https://cdn-icons-png.flaticon.com/512/124/124010.png"></a></li>
+                    <li><a href=""><img src="https://as2.ftcdn.net/v2/jpg/00/79/91/09/1000_F_79910944_STIMMytsLr4md1UddAUgf7pWF0m1pjv8.jpg"></a></li>
+                    <li><a href=""><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png"></a></li>
+                </ul>
+    </body>  
+    <footer>    
+    </footer>
 </html>

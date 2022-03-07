@@ -1,35 +1,55 @@
-/* 
-    Created on : 31 ene. 2022, 23:43:30
-    Author     : pablo
-*/
-
 /*
-Unidades de medida
+el .algo es para hacer referncia a algo en especifico. por ejemplo el que viene le cambia el estilo a todos los class="container"
 
-vh: 1/100
-%: respecto al elemento padre
-px: pixeles
-cm: centimetros
-padding: un espacio entre componentes/elementos
-box-sizing: alto= alto+espaciado+borde
-margin= dar un espacio alrededor de los elementos
-align-items: disposicion en que mostrar los elementos
+valores de "medida":
+
+       vh:  va de 1 a 100 
+       %: porcentaje de tamaño respecto al elemento padre en el que esta ubicado
+       px: pixeles 
+
+IMPORTANTE: usar el ; al final de cada atributo
+
+El cover va a hacer que el background cubra todo el div sin distorsionar la imagen
+
+padding: crea espacio entre elementos
+
+box sizing: similar al padding
+
+position:
+    relative: relativo a la posicion en la que se encuentra el objeto
+    static: no se ve afectada por algo mas
+
+margin: da un espacio alrededor de los elementos
+
+display: nos dice como se muestra la info en un bloque de nivel. Un bloque de nivel es un div.
+         el flex le da la posibilidad que abarque la mayor parte del elemento en el que se este poniendo el display
+
+align: disposicion en la que queremos mostrar los elementos
+
+cursor: hace que cuando se pasa el raton sobre el elemento, cambie la figura del mouse. Este hace que salga como una mano para seleccionarlo
+
+el nav no se esta nombrando como una clase, va a cambiar a TODOS los nav
+
+list-style: estilo para poner en la lista. Se pueden poner varios
+
+ margin: 0px 20px; -------> los primeros dos valores de right y left toman 0px y bottom-left es de 20px
 
 */
+
 .container{
-    height: 100vh;
+    height: 100 vh;
     width: 100%;
-    background-image: url(../images/background.png);
+    background-image: url(../images/background.png); 
     background-size: cover;
     padding-left: 5%;
     padding-right: 5%;
     box-sizing: border-box;
-    position: relative; 
+    position: relative;
 }
 
 .navbar{
-    width: 15%;
-    height: 15vh;
+    width: 100%;
+    height: 15 vh;
     margin: auto;
     display: flex;
     align-items: center;
@@ -45,7 +65,7 @@ nav{
     padding-left: 60px;
 }
 
-nav ul il {
+nav ul li{
     display: inline-block;
     list-style: none;
     margin: 0px 20px;
@@ -53,12 +73,12 @@ nav ul il {
 
 nav ul li a{
     text-decoration: none;
-    color: darkmagenta;
+    color: #660066;
 }
 
 .content{
     margin-top: 10%;
-    margin-left: 10%;
+    margin-left: 10%;      
 }
 
 .content h1{
@@ -66,10 +86,11 @@ nav ul li a{
     font-weight: 100;
     margin-top: 24px;
     margin-bottom: 15px;
-    color: #660066;
+    color: #330033;
 }
 
-.content p {
+.content p{
     font-size: 20px;
-    color: #9F1EF8;
+    color: #cc99ff;
 }
+
